@@ -26,7 +26,7 @@
                     <li><a href="#sobre-a-loja">Sobre</a></li>
                     <li><a href="#destaque">Em destaque</a></li>
                     <li><a href="#promocoes">Promoções</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,7 +38,8 @@
         <img src="image/foto3.jpg" alt="">
     </div>
 
-    <section id="sobre-a-loja">
+    <section id="sobre-a-loja"></section>
+    <section >
         <div class="container container-flex">
             <img src="image/travel.jpg" alt="">
             <div>
@@ -92,7 +93,7 @@
             </ul>
         </div>
     </section>
-
+    
     <section id="promocoes">
         <div class="container">
             <h2>Promoções</h2>
@@ -165,11 +166,68 @@
         </div>
     </section>
 
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form action="">
+                <div class="form-campo">
+                    <label for="nome">Nome </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone </label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail </label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                </div>
+                <div class="form-campo">
+                    <label for="pacote">Pacote</label>
+                    <input type="text" name="pacote" id="pacote">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem </label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </div>
+
+                <button type="submit" class="enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container container-flex">
+            <a href="/index.html">
+                <p>2024 &copy; Wanderlust & Co.</p>
+            </a>
+            <ul class="container-flex">
+                <li class="container-flex">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="/icons/facebook.png" alt="Logo Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="/icons/instagram.png" alt="Logo Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="/icons/youtube.png" alt="Logo Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-				
-    <script src="main.js"></script>
+    <script src="/js/jquery.mask.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/messages_pt_BR.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

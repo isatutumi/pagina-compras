@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -16,9 +15,14 @@ html {
 header {
     background-color: #049DBF;
     padding-top: 16px ;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-header > .container {
+header > .container,
+footer > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,7 +97,6 @@ section img {
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 section {
@@ -102,6 +105,8 @@ section {
 
 section h2 {
     margin-bottom: 16px;
+    font-size: 40px;
+    margin-top: 25px;
 }
 
 section p {
@@ -117,7 +122,7 @@ section p {
 .lista-viagem li {
     list-style: none;
     max-width: 30%;
-    margin-bottom: 55px;
+    margin-top: 55px;
     box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.1);
     padding: 16px;
     border-radius: 10px;
@@ -199,7 +204,88 @@ del {
     color: #ccc;
 }
 
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 100px;
+}
+
+form {
+    max-width: 360px;
+}
+
+.enviar {
+    width: 100%;
+    padding: 6px;
+    border: none;
+    background-color: #13C000;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: #109b01;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer {
+    background-color: #049DBF;
+    padding-top: 16px;
+}
+
+footer .container {
+    margin: 0px 120px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+    font-style: italic;
+}
+
 @media (max-width: 768px) {
+    .container {
+        margin: 0px 10px;
+    }
     .container-flex {
         display: block;
     }
@@ -217,4 +303,16 @@ del {
     .item-central {
         margin: auto;
     }
-}
+    footer .container {
+        margin: 0px 10px;
+    }
+    footer li img {
+        height: 25px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    footer .container-flex {
+        display: flex;
+    }
+}    
