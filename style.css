@@ -77,15 +77,6 @@ nav li a {
     
 }
 
-#carousel-imagem  {
-    overflow: hidden;
-    max-height: 300px;
-}
-
-#carousel-imagem img {
-    background-size: cover;
-}
-
 section img {
     width: 40%;
     height: 40%;
